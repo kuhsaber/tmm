@@ -4,20 +4,16 @@
 ##  FILES, SERVICES AND CONFIGURATION  ##
 #########################################
 
-# Openbox User nobody autostart
-cat <<'EOT' > /nobody/.config/openbox/autostart
-# Programs that will run after Openbox has started
-
+# X app start script
+cat <<'EOT' > /appstart.sh
 ps -ewf | grep tinyMediaManager | grep -v "grep" | awk '{print $2}'| xargs kill
-
-xsetroot -solid black -cursor_name left_ptr
 
 cd /tinyMediaManager
 java -Djava.net.preferIPv4Stack=true -jar getdown.jar .
 EOT
 
 # tmm config
-cat <<'EOT' > /etc/my_init.d/01_tmm_config.sh
+cat <<'EOT' > /etc/my_init.d/04_tmm_config.sh
 #!/bin/bash
 [[ ! -d /config ]] && mkdir /config
 [[ ! -d /config/log ]] && mkdir /config/log
