@@ -5,7 +5,8 @@
 #########################################
 
 # X app start script
-cat <<'EOT' > /appstart.sh
+cat <<'EOT' > /startapp.sh
+#!/bin/bash
 ps -ewf | grep tinyMediaManager | grep -v "grep" | awk '{print $2}'| xargs kill
 
 cd /tinyMediaManager

@@ -6,7 +6,8 @@ MAINTAINER Carlos Hernandez <carlos@techbyte.ca>
 ##        ENVIRONMENTAL CONFIG         ##
 #########################################
 # Set correct environment variables
-ENV HOME="/root" LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8" APP_NAME="tinyMediaManager"
+ENV HOME="/root" LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8" 
+ENV APP_NAME tinyMediaManager
 
 
 # Use baseimage-docker's init system
