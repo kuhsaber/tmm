@@ -1,5 +1,5 @@
 # tinyMediaManager 
-FROM hurricane/dockergui:xvnc
+FROM hurricane/dockergui:x11rdp
 MAINTAINER Carlos Hernandez <carlos@techbyte.ca>
 
 #########################################

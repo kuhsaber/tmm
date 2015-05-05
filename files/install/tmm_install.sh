@@ -7,7 +7,6 @@
 # X app start script
 cat <<'EOT' > /startapp.sh
 #!/bin/bash
-ps -ewf | grep tinyMediaManager | grep -v "grep" | awk '{print $2}'| xargs kill
 
 cd /tinyMediaManager
 java -Djava.net.preferIPv4Stack=true -jar getdown.jar .
