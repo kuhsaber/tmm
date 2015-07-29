@@ -3,4 +3,5 @@
 # Launch the updater of tmm
 #####################################################################################
 
-java -Djava.net.preferIPv4Stack=true -jar getdown.jar .
+cd "$(dirname "$0")"
+java -Djava.net.preferIPv4Stack=true -Dappbase=http://www.tinymediamanager.org/ -jar getdown.jar .

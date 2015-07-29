@@ -1,12 +1,12 @@
 # tinyMediaManager 
-FROM hurricane/dockergui:x11rdp1.2
+FROM hurricane/dockergui:x11rdp1.3
 MAINTAINER Carlos Hernandez <carlos@techbyte.ca>
 
 #########################################
 ##        ENVIRONMENTAL CONFIG         ##
 #########################################
 # Set correct environment variables
-ENV HOME="/root" LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8" 
+ENV LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8" 
 ENV APP_NAME tinyMediaManager
 
 
