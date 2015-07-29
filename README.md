@@ -36,6 +36,15 @@ This environment variable is used to set the [TimeZone] of the container.
 
 [TimeZone]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
    
+## Other parameters for registered version:
+tinyMediaManager license files are based on mac address and hostname. So you will need to run these containers with a set hostname and mac address.
+
+###`--host`
+Used to set the hostname of container. (i.e --host=myhost)
+
+###`--mac-address`
+Used to set the mac address of container. (i.e --mac-address=MACADDRESS)
+
 ## Build from docker file (Info only, not required.):
 
 ```
