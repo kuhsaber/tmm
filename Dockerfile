@@ -29,7 +29,7 @@ RUN mkdir /tinyMediaManager
 RUN wget https://nightly.tinymediamanager.org/dist/tmm_2.9.8-SNAPSHOT_9944556_linux.tar.gz -O /tmp/tinyMediaManager.tar.gz
 RUN tar -zxvf /tmp/tinyMediaManager.tar.gz -C /tinyMediaManager
 
-RUN chmod +x /tmp/install/tmm_install.sh && /tmp/install/tmm_install.sh && rm -r /tmp/install
+RUN chmod +x /tmp/install/tmm_install.sh && sleep 1 && /tmp/install/tmm_install.sh
 
 #########################################
 ##         EXPORTS AND VOLUMES         ##
