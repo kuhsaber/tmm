@@ -8,7 +8,6 @@
 cat <<'EOT' > /startapp.sh
 #!/bin/bash
 
-chmod -R 666 /tinyMediaManager
 cd /tinyMediaManager
 java -Djava.net.preferIPv4Stack=true -jar getdown.jar .
 EOT
