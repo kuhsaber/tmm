@@ -16,7 +16,7 @@ Additionally xrdp is installed and the container can be accessed using any rdp c
 ### start a tinyMediaManager instance:
   
 ```
-docker run -d -p 8080:8080 -p 3389:3389 -v /*tmm_config_location*:/config -v /*your_media_location*:/mnt -e TZ=America/Edmonton --name=tmm hurricane/tinyMediaManager
+docker run -d -p 8080:8080 -p 3389:3389 -v /*tmm_config_location*:/config -v /*your_media_location*:/mnt -e TZ=America/Edmonton --name=tinymediamanagerv2 henkallsn/tinymediamanagerv2
 ```
 
 ## Volumes:
