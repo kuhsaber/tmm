@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y libmediainfo0
 #########################################
 ## INSTALL DIRECTLY FROM RELEASE PAGE  ##
 #########################################
-RUN mkdir /tinyMediaManager
+RUN mkdir /tinyMediaManager && chmod 775 /tinyMediaManager
 RUN wget https://nightly.tinymediamanager.org/dist/tmm_2.9.8-SNAPSHOT_9944556_linux.tar.gz -O /tmp/tinyMediaManager.tar.gz
 RUN tar -zxvf /tmp/tinyMediaManager.tar.gz -C /tinyMediaManager
 
