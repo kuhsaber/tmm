@@ -44,11 +44,3 @@ Used to set the hostname of container. (i.e --host=myhost)
 
 ###`--mac-address`
 Used to set the mac address of container. (i.e --mac-address=MACADDRESS)
-
-## Build from docker file (Info only, not required.):
-
-```
-git clone --depth=1 https://github.com/hurricanehernandez/tmm.git 
-cd tmm
-docker build --rm=true -t tmm . 
-```
