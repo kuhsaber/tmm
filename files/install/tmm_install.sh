@@ -9,7 +9,7 @@ cat <<'EOT' > /startapp.sh
 #!/bin/bash
 
 cd /tinyMediaManager
-java -Djava.net.preferIPv4Stack=true -jar tmm.jar .
+java -Djava.net.preferIPv4Stack=true -jar getdown.jar .
 EOT
 
 # tmm config
