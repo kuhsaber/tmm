@@ -21,6 +21,9 @@ COPY ./files/ /tmp/
 ##         INSTALL LIBMEDIAINFO        ##
 #########################################
 RUN apt-get update && apt-get install -y libmediainfo0
+RUN apt-get install python-xdg
+RUN apt-get install -f
+
 
 #########################################
 ## INSTALL DIRECTLY FROM RELEASE PAGE  ##
