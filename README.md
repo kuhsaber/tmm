@@ -1,4 +1,5 @@
-#Docker tinyMediaManager
+#Docker tinyMediaManager 
+changed the "noboy:users" to "root:"
 
 ## Description:
 tinyMediaManager (http://www.tinymediamanager.org) is a media management tool written in Java/Swing.  
