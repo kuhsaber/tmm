@@ -29,7 +29,7 @@ cat <<'EOT' > /etc/my_init.d/04_tmm_config.sh
 [[ ! -L /tinyMediaManager/config.xml ]] && ln -s /config/config.xml /tinyMediaManager/config.xml
 [[ ! -L /tinyMediaManager/tmm.odb ]] && ln -s /config/tmm.odb /tinyMediaManager/tmm.odb
 
-chown -R nobody:users /config /tinyMediaManager /nobody || exit 0
+chown -R root: /config /tinyMediaManager /root || exit 0
 EOT
 
 chmod -R +x /etc/service/ /etc/my_init.d/
